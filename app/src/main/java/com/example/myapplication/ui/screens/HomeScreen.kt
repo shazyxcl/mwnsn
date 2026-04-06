@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp                  // ← ditambahkan
 import androidx.navigation.NavHostController
 import com.example.myapplication.ui.components.DramaItem
 import com.example.myapplication.ui.viewmodel.HomeViewModel

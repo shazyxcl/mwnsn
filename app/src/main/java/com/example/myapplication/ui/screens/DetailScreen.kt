@@ -1,10 +1,12 @@
 package com.example.myapplication.ui.screen
 
+import androidx.compose.foundation.clickable     // ← ditambahkan
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment               // ← ditambahkan
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
@@ -51,7 +53,10 @@ fun DetailScreen(bookId: String, navController: NavHostController) {
                 }
             }
         }
-    } ?: Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+    } ?: Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
         CircularProgressIndicator()
     }
 }

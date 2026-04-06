@@ -8,7 +8,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.example.melolo.ui.components.DramaItem
+import com.example.myapplication.ui.components.DramaItem
 import com.example.myapplication.ui.viewmodel.SearchViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
